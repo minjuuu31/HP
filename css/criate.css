@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------------------------------
+1.0 - HTML
+2.0 - Header
+3.0 - Main
+4.0 - Footer
+-----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------
+1.0 - HTML
+-----------------------------------------------------------------------------------*/
+
+html {
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: 'Mongolian Baiti',sans-serif;
+}
+
+body {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+body,p,ul,li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------------------------------------------------------------------------------------
+2.0 - Header
+-----------------------------------------------------------------------------------*/
+
+
+.header {
+    width: 900px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 130px;
+    box-sizing: border-box;
+    }
+
+#what_is_minju a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'Mongolian Baiti',sans-serif;
+    }
+
+.header_nav {
+    margin: 20px 10px;
+    overflow: visible;
+    justify-content: space-around;
+    display: flex;
+}    
+
+.icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: black;
+    font-family: 'Sitka Banner',sans-serif;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    line-height: 70px;
+    display: inline-block;
+    overflow: visible;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.icon a:hover {
+    opacity: 0.8;
+}
+
+.icon_now {
+    font-size: 1rem;
+    border: solid #000000 1.5px;
+    color: black;
+    background-color: white;
+    font-family: 'Sitka Banner',sans-serif;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    line-height: 85px;
+    text-align: center;
+    overflow: visible;
+    display: inline-block;
+}   
+
+/*--------------------------------------------------------------------------------------
+3.0 - Main
+-----------------------------------------------------------------------------------*/
+
+.main {
+    width: 800px;
+    margin: 50px auto 80px;
+    font-family: 'Kosugi', sans-serif;
+}
+
+p {
+   margin-top: 70px;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+
+.criate_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0 auto 10px;
+}
+
+.img_list {
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.img_item > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.art_list:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.art_item {
+    margin-left: 20px;
+}
+
+.art_img {
+    width: 200px;
+    height: 170px;
+}
+
+
+.webImg {
+    justify-content: space-between;
+ 
+}
+
+.main_img {
+    margin: 30px 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 170px;
+}
+
+.man_img > a {
+    text-align: center;
+    display: inline-block;
+}
+
+.cafe-img {
+    height: 75%;
+}
+/*//////////////////////
+スクロールバー
+///////////////////*/
+
+.art_list {
+    width: 800px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.art_list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.art_list::-webkit-scrollbar-track {
+    background-color: rgb(241, 230, 255);
+    border-radius: 10px;
+}
+
+.art_list::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+
+jQery --  Click イベント
+
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#background_curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#largeImg {
+    position: fixed;
+    max-width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/*--------------------------------------------------------------------------------------
+4.0 - Footer
+-----------------------------------------------------------------------------------*/
+
+.footer {
+    margin: 0 auto;
+}

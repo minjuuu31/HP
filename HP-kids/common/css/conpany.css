@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+1. HTML
+2. Top
+4. Nav
+6. Contents
+7. Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+1. HTML
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 100%;
+    background-color: bisque;
+}
+
+/*///////////////////////////////////////////////////////////////////////////
+
+2. Top
+
+/////////////////////////////////////////////////////////////////////////*/
+
+
+#home {
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/bgi2.jpg);
+    background-size: 30%;
+    background-repeat: repeat-x;
+}
+
+
+/*/////////////////////////////////////////////////////////////
+ロゴ
+/////////////////////////////////////////////////////////////*/
+
+#home_logo {
+    font-size: 1.5rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: rgb(97, 4, 97);
+    text-shadow: 2px 2px 1px #fbff0c, -2px -2px 1px #fbff0c, -2px 2px 1px #fbff0c, 2px -2px 1px #fbff0c;
+    text-align: center;
+    letter-spacing: 5px;
+    display: inline-block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+#home_logo > a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+#home_img {
+    vertical-align: middle;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+3. Nav
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#nav {
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+}
+
+.nav_item {
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav_item > a {
+    justify-content: space-around;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "M PLUS 1p";
+    font-weight: 900;
+    color: rgb(31, 30, 30);
+    padding: 10px 0;
+}
+
+.nav_item > a:hover {
+    background-color: rgb(253, 179, 228);
+    border-radius: 30px;
+    color: white;
+}
+
+.now {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: "M PLUS 1p";
+    font-weight: 900;
+    color: rgb(31, 30, 30);
+    padding: 10px 0;
+}
+
+
+ /*////////////////////////////////////////////////
+ Contents
+ //////////////////////////////////////////////*/
+
+#main_text {
+    font-size: 3rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: rgb(97, 4, 97);
+    text-shadow: 2px 2px 1px #fbff0c, -2px -2px 1px #fbff0c, -2px 2px 1px #fbff0c, 2px -2px 1px #fbff0c;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+
+#contents {
+     width: 100%;
+     margin-bottom: 100px;
+}
+
+#innner {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#contents_img {
+    width: 300px;
+    height: 280px;
+    margin-left: 100px;
+}
+
+#contents_text {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+14. Footer
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer {
+    width: 100%;
+    min-width: 1200px;
+    background-color: rgb(95, 35, 95);
+}
+
+#footer_innner {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer_box {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+}
+
+.footer_title > a,
+#item_title {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    margin: 0;
+}
+
+#footer_list {
+    margin: 0 0 0 10px;
+    font-size: 0.5rem;
+}
+
+.footer_item {
+    color: white;
+}
+
+.footer_item > a {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#copy {
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------------------------------
+1.0 - HTML
+2.0 - Header
+3.0 - Main
+4.0 - Footer
+-----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------
+1.0 - HTML
+-----------------------------------------------------------------------------------*/
+html {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+body,p,ul,li {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+/*--------------------------------------------------------------------------------------
+2.0 - Header
+-----------------------------------------------------------------------------------*/
+
+.header {
+    width: 900px;
+    text-align: center;
+    margin: 50px auto 100px;
+    padding: 0 130px;
+    box-sizing: border-box;
+}
+
+#what_is_minju a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'Mongolian Baiti',sans-serif;
+}
+
+.header_nav {
+    margin: 20px 10px;
+    overflow: visible;
+    justify-content: space-around;
+    display: flex;
+}    
+   
+.icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: black;
+    font-family: 'Sitka Banner',sans-serif;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    line-height: 70px;
+    display: inline-block;
+    overflow: visible;
+    text-align: center;
+    margin-top: 15px;
+}
+    
+.icon a:hover {
+    opacity: 0.8;
+}
+    
+.icon_now {
+    font-size: 1rem;
+    border: solid #000000 1.5px;
+    color: black;
+    background-color: white;
+    font-family: 'Sitka Banner',sans-serif;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    line-height: 85px;
+    text-align: center;
+    overflow: visible;
+    display: inline-block;
+}  
+
+
+/*--------------------------------------------------------------------------------------
+2.0 - Main
+-----------------------------------------------------------------------------------*/
+
+#text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: normal;
+}

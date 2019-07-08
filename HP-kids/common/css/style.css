@@ -1,0 +1,1196 @@
+@charset "utf-8";
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+1.  HTML
+2. Top
+3. Home
+4. Home - Nav
+5. main
+6. Contents
+7. Contents - left
+8. Contents - left - Oshirase
+9. Contents - left - Goods
+10. Contents - rigth
+11. Contents - rigth - Oekaki
+12. Contents - right - Access
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+1. HTML
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+}
+
+/*///////////////////////////////////////////////////////////////////////////
+
+2. Top
+
+/////////////////////////////////////////////////////////////////////////*/
+
+#top {
+    width: 1040px;
+    margin: 150px auto;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 0);
+}
+
+
+#img_box {
+    text-align: center;
+    margin: 0 auto 10px;
+    padding-top: 30px;
+}
+
+#img {
+    animation-name: img;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img {
+   0% {
+       transform: rotateY(360deg);
+   }
+   100% {
+       transform: rotateY(0deg);
+   }
+}
+
+
+#loading_box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+
+.load1 {
+    animation-name: load_a;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    letter-spacing: 10px;
+    padding: 6px;
+    margin-right: 7px;
+    background-color: blue;
+}
+
+@keyframes load_a {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.load2 {
+    animation-name: load_b;
+    animation-duration: 1s;
+    animation-delay: 1.25s;
+    animation-iteration-count: infinite;
+    letter-spacing: 10px;
+    padding: 6px;
+    margin-right: 7px;
+    background-color: rgb(94, 255, 45);
+}
+
+@keyframes load_b {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.load3 {
+    animation-name: load_c;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    letter-spacing: 10px;
+    padding: 6px;
+    margin-right: 7px;
+    background-color: rgb(255, 0, 170);
+}
+
+@keyframes load_c {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.load4 {
+    animation-name: load_d;
+    animation-duration: 1s;
+    animation-delay: 1.75s;
+    animation-iteration-count: infinite;
+    letter-spacing: 10px;
+    padding: 6px;
+    background-color: rgb(140, 0, 255);
+}
+
+@keyframes load_d {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#brand_logo {
+    margin: 0 auto 50px;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 3rem;
+    color: purple;
+}
+
+/*//////////////////////////////////////////////////////////////////////
+
+3. Home
+
+/////////////////////////////////////////////////////////////////////*/
+
+#home {
+    width: 100%;
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../img/bgi2.jpg");
+    background-size: 60%;
+    background-repeat: repeat;
+}
+
+#home_top {
+    width: 100%;
+    margin: 0 auto 50px;
+    top: -150px;
+}
+
+#jell {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/*////////////////////////////////////
+アニメーションージェル
+////////////////////////////////////*/
+
+.jell_left {
+    display: inline-block;
+    display: flex;
+    width: 200px;
+    height: 300px;
+}
+
+.jell_1 {
+    width: 50%;
+    height: 0%;
+    animation-name: jell_a;
+    animation-duration: 3.5s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 80px 50px;
+}
+
+@keyframes jell_a {
+    from {
+        width: 50%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 40%;
+        height: 100%;
+        border-radius: 0 0 80px 70px;
+        background-color: purple;
+        box-shadow: inset 10px -30px 10px rgb(61, 2, 61);
+    }
+}
+
+.jell_2 {
+    width: 30%;
+    height: 0%;
+    animation-name: jell_b;
+    animation-duration: 2.5s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 50px 20px;
+}
+
+@keyframes jell_b {
+    from {
+        width: 30%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 30%;
+        height: 40%;
+        border-radius: 0 0 80px 20px;
+        background-color: purple;
+        box-shadow: inset 6px 10px 10px rgb(114, 2, 99);
+    }
+}
+
+
+.jell_3 {
+    width: 40%;
+    height: 0%;
+    animation-name: jell_c;
+    animation-duration: 2.7s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 70px 30px;
+}
+
+@keyframes jell_c {
+    from {
+        width: 40%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 30%;
+        height: 60%;
+        border-radius: 0 0 80px 80px;
+        background-color: purple;
+        box-shadow: inset 0 -10px 15px rgb(100, 1, 71);
+    }
+}
+
+.jell_4 {
+    width: 10%;
+    height: 0%;
+    animation-name: jell_d;
+    animation-duration: 2.7s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 70px 30px;
+}
+
+
+@keyframes jell_d {
+    from {
+        width: 40%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 40%;
+        height: 40%;
+        border-radius: 0 0 80px 80px;
+        background-color: purple;
+        box-shadow: inset 3px -8px 10px rgb(95, 3, 67);
+    }
+}
+
+/*///////////////////////////////////
+Jell 右部分
+////////////////////////////*/
+
+.jell_right {
+    display: inline-block;
+    display: flex;
+    width: 200px;
+    height: 300px;
+}
+
+.jell_5 {
+    width: 30%;
+    height: 0%;
+    animation-name: jell_e;
+    animation-duration: 2.2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 50px 20px;
+}
+
+@keyframes jell_e {
+    from {
+        width: 30%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 20%;
+        height: 40%;
+        border-radius: 0 0 50px 80px;
+        background-color: purple;
+        box-shadow: inset -10px 5px 10px rgb(61, 2, 61);
+    }
+}
+
+.jell_6{
+    width: 20%;
+    height: 0%;
+    animation-name: jell_f;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 50px 50px;
+}
+
+@keyframes jell_f {
+    from {
+        width: 20%;
+        height: 0%;
+        border-radius: 0 0 50px 80px; 
+        background-color: purple;
+    }
+    to {
+        width: 20%;
+        height: 30%;
+        border-radius: 0 0 80px 70px;
+        background-color: purple;
+        box-shadow: inset -10px 10px 20px rgb(99, 8, 99);
+    }
+}
+
+.jell_7 {
+    width: 30%;
+    height: 0%;
+    animation-name: jell_g;
+    animation-duration: 3.2s;
+    animation-delay: 0;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 50px 20px;
+}
+
+@keyframes jell_g {
+    from {
+        width: 30%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 25%;
+        height: 70%;
+        border-radius: 0 0 80px 60px;
+        background-color: purple;
+        box-shadow: inset 10px -40px 10px rgb(161, 6, 161);
+    }
+}
+
+
+.jell_8 {
+    width: 35%;
+    height: 0%;
+    animation-name: jell_h;
+    animation-duration: 3.5s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    background-color: purple;
+    border-radius: 0 0 70px 30px;
+}
+
+@keyframes jell_h {
+    from {
+        width: 35%;
+        height: 0%;
+        border-radius: 0 0 50px 30px; 
+        background-color: purple;
+    }
+    to {
+        width: 35%;
+        height: 100%;
+        border-radius: 0 0 30px 70px;
+        background-color: purple;
+        box-shadow: inset -10px -25px 10px rgb(77, 2, 67);
+    }
+}
+
+/*/////////////////////////////////////////////////////////////
+ロゴ
+/////////////////////////////////////////////////////////////*/
+
+#homeTop {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1040px;
+}
+
+
+.home_logo {
+    font-size: 5rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: rgb(97, 4, 97);
+    text-shadow: 5px 5px 2px #fbff0c, -5px -5px 2px #fbff0c, -5px 5px 2px #fbff0c, 5px -5px 2px #fbff0c;
+    text-align: center;
+    letter-spacing: 8px;
+    display: inline-block;
+    width: 1040px;
+    margin: 0 auto  10px;
+    padding-left: 20px;
+}
+
+#home_img {
+    vertical-align: middle;
+}
+
+#brand_text {
+    font-family: 'Baloo Chettan', cursive;
+    display: inline-block;
+    margin-bottom: 30px;
+    /*padding-left: 810px;*/
+    text-shadow: 1px 1px 2px #fbff0c, -1px -1px 2px #fbff0c, -1px 1px 2px #fbff0c, 1px -1px 2px #fbff0c;
+    position: absolute;
+    top: 8%;
+    left: 65%;
+}
+
+#brand_text > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    width: 100%;
+    border: dashed 3px rgb(17, 0, 255);
+    background-color: rgb(216, 182, 202);
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+#brand_text > a:hover {
+    background-color: rgb(197, 134, 255);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+4. Home - Nav
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#nav {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    background-color: rgb(248, 214, 214);
+    border: solid 2px rgb(248, 173, 159);
+    border-radius: 10px;
+    padding: 0;
+}
+
+.nav_item {
+    width: 20%;
+    border-left: solid 2px rgb(248, 173, 159);
+    box-sizing: border-box;
+}
+
+.nav_item:first-child {
+    border-style: none;
+}
+
+.nav_item > a {
+    justify-content: space-around;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "M PLUS 1p";
+    font-weight: 900;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav_item > a:hover {
+    background-color: rgb(255, 86, 199);
+    color: white;
+ }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+5. Main スライドショー
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#main {
+    width: 1040px;
+    height: 520px;
+    margin: 20px auto 80px;
+    border: solid 10px rgb(185, 185, 185);
+}
+
+#slide {
+    width: 1040px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide_list {
+    width: 12000px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide_item {
+    float: left;
+    list-style: none;
+}
+
+.slide_item > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#arrow {
+    width: 1040px;
+    /*display: none;*/
+}
+
+.prev {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    margin-top: -50px;
+}
+
+.icon_prev {
+    position: absolute;
+    font-size: 3rem;
+    color: rgb(249, 199, 253);
+    z-index: 10000000;
+}
+  
+.icon_prev:hover {
+    color: plum;
+    cursor: pointer;
+}
+
+.next {
+    width: 100%;
+}
+  
+.icon_next {
+    font-size: 3rem;
+    color: rgb(249, 199, 253);
+    position: absolute;
+    top: 55%;
+    right: 0;
+    margin-top: -50px;
+}
+  
+.icon_next:hover {
+    color: plum;
+    cursor: pointer;
+}
+  
+
+#paging {
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    z-index: 100000;
+}
+
+#paging li {
+    margin-right: 10px;
+}
+
+#paging > li:after {
+    width: 30px;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 300;
+    content: "\f111";
+    color: rgb(131, 129, 129);
+    z-index: 100000;
+    font-size: 1rem;
+  }
+  
+  #paging > li.active:after {
+    width: 30px;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    color: purple;
+    z-index: 100000;
+    font-size: 1rem;
+  }
+  
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+6. Contents
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#contents {
+    display: flex;
+    margin: 0 auto 30%;
+    width: 1200px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+7. Contents - left
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#contents_left {
+    width: 900px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+8. Contents - left - Oshirase
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#oshirase_box {
+    box-sizing: border-box;
+    border: dotted 10px rgb(234, 0, 255);
+    width: 700px;
+    background-color: rgb(255, 233, 250);
+    box-shadow: 0 0 0 8px rgb(255, 233, 250);
+    border-radius: 8px;
+    margin: 20px 0 100px;
+    position: relative;
+}
+
+#oshirase_img {
+    position: absolute;
+    top: -80px;
+    left: -30px;
+}
+
+
+#oshirase_title {
+    font-size: 1rem;
+    width: 150px;
+    padding: 10px;
+    margin: -50px 0 30px 20px;
+    text-align: center;
+    background-color: rgb(255, 233, 250);
+    border: dotted 10px rgb(255, 0, 128);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 7px rgb(255, 233, 250);
+    letter-spacing: 1.5px;
+}
+
+.star {
+    color: rgb(255, 217, 0);
+}
+
+
+#oshirase_list {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 50px;
+}
+
+.oshirase_item {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 500px;
+    border-bottom: solid 1px palevioletred;
+}
+
+.oshirase_item:first-child::before {
+    font-family: 'Baloo Chettan', cursive;
+    content: "NEW";
+    color: red;
+    font-size: 0.8rem;
+    animation-name: new;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 1S;
+}
+
+@keyframes new {
+    0% {
+        color: red;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
+}
+
+
+.oshirase_item > a {
+    display: inline-block;
+    color: rgb(71, 70, 70);
+    text-decoration: none;
+    width: 100%;
+}
+
+.oshirase_item:hover {
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+9. Contents - left - Goods
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#goods_box {
+    width: 850px;
+    border: double 10px rgb(174, 131, 253);
+    margin: 0 10px 50px 0;
+    background-color: rgb(249, 212, 250);
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#goods_img {
+    position: absolute;
+    top: -70px;
+    left: -10px;
+}
+
+
+#goods_text {
+    background-color: rgb(249, 212, 250);
+    width: 200px;
+    border: double 10px rgb(174, 131, 253);
+    text-align: center;
+    font-size: 1rem;
+    margin: -40px 0 30px 20px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+
+
+#goods_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.goods_item {
+    width: 210px;
+    height: 300px;
+    padding-top: 20px;
+    margin: 0 20px 50px;
+    border: solid 2px rgb(183, 183, 187);
+}
+
+.goods_item > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.goods_item:hover {
+    background-color: rgb(210, 165, 252);
+}
+
+.list_text {
+    width: 200px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: rgb(39, 39, 39);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+10. Contents - right
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#contents_right {
+    width: 300px;
+    margin: 0;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+11. Contents - right - Oekaki
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#oekaki_box {
+    width: 280px;
+    margin-bottom: 100px;
+    border: dashed 5px rgb(47, 255, 47);
+    background-color: rgb(230, 255, 204);
+    position: relative;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#oekaki_text {
+    background-color: rgb(230, 255, 204);
+    width: 150px;
+    border: dashed 5px rgb(47, 255, 47);
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    margin-bottom: 30px;
+    top: -45px;
+    left: 40px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    z-index: 1;
+}
+
+.oekaki_icon {
+    color: blue;
+}
+
+#kyouryuu{
+    transform: scale(-1, 1);
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+#oekaki_list {
+    width: 200px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+#oekaki_list > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.oekaki_img {
+    width: 150px;
+    height: 230px;
+    z-index: 2;
+    width: 180px;
+    margin: 0 auto;
+    border: solid 2px rgb(160, 159, 159);
+}
+
+.icon_crown {
+    color: rgb(255, 217, 0);
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 2rem;
+}
+
+.oekaki_item {
+    margin-bottom: 50px;
+}
+
+.oekaki_title {
+    text-align: left;
+    padding-left: 10px;
+    color: rgb(31, 31, 31);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+12. Contents - right - Access
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#access_box {
+    width: 280px;
+    margin: 0 0 100px;
+    border: solid 4px rgb(115, 171, 245);
+    background-color: rgb(208, 229, 253);
+    box-sizing: border-box;
+    position: relative;
+}
+
+#access_text {
+    position: absolute;
+    top: -50px;
+    left: 60px;
+    background-color: rgb(208, 229, 253);
+    border: solid 4px rgb(115, 171, 245);
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.icon_car {
+    font-size: 2rem;
+    color: rgb(31, 56, 197);
+}
+
+#access_list {
+    width: 250px;
+    text-align: center;
+    margin: 60px auto 0;
+}
+
+.access_title {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+13. Community Box
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#community_box {
+    width: 280px;
+    margin: 0 auto;
+    border: solid 5px rgb(255, 147, 75);
+    background-color: rgb(255, 241, 223);
+    position: relative;
+}
+
+#community_title {
+    border: solid 5px rgb(255, 147, 75);
+    background-color: rgb(255, 241, 223);
+    position: absolute;
+    top: -50px;
+    left: 70px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    z-index: 2;
+}
+
+#seiuchi {
+    z-index: 10;
+    position: absolute;
+    top: -80px;
+    right: 10px;
+}
+
+.community_item {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.community_item > a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+.community_item:hover {
+    opacity: 0.8;
+}
+
+.icon_tw {
+    color: rgb(41, 169, 255);
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.icon_insta {
+    font-size: 1.7rem;
+    margin-right: 10px;
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+    border-radius: 5px;
+    color: rgb(92, 92, 92);
+}
+
+.icon_fb {
+    font-size: 1.5rem;
+    color: rgb(18, 70, 241);
+    margin-right: 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+14. Footer
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer {
+    width: 100%;
+    min-width: 1200px;
+    background-color: rgb(95, 35, 95);
+    position: absolute;
+    bottom: 0;
+}
+
+#footer_innner {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer_box {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+}
+
+.footer_title > a,
+#item_title {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    margin: 0;
+}
+
+#footer_list {
+    margin: 0 0 0 10px;
+    font-size: 0.5rem;
+}
+
+.footer_item {
+    color: white;
+}
+
+.footer_item > a {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#copy {
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+}
+
+/*///////////////////////////////////////////////
+BTN
+//////////////////////////////////////////////*/
+
+#btn_box {
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    width: 80px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+
+#btn_box > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    line-height: 55px;
+    text-align: center;
+}
+
+.gost {
+    font-size: 3rem;
+    color: blue;
+}
+
+.top_btn {
+    margin: 0;
+    width: 80px;
+    font-size: 1rem;
+    color: rgb(243, 249, 250);
+    line-height: 10px;
+}
+
+.gost:hover {
+    color: rgb(54, 236, 9);
+    font-size: 4rem;
+}
+
+.hover {
+    color: rgb(248, 29, 201);
+    font-size: 1.5rem;
+    font-weight: bold;
+}

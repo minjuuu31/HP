@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+1. HTML
+2. Top
+4. Nav
+6. Contents
+7. Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+1. HTML
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 100%;
+    background-color: bisque;
+}
+
+.item_img {
+    width: 230px;
+    height: 290px;
+}
+
+li {
+    list-style: none;
+}
+
+strong {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*///////////////////////////////////////////////////////////////////////////
+
+2. Top
+
+/////////////////////////////////////////////////////////////////////////*/
+
+
+#home {
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/bgi2.jpg);
+    background-size: 30%;
+    background-repeat: repeat-x;
+}
+
+
+/*/////////////////////////////////////////////////////////////
+ロゴ
+/////////////////////////////////////////////////////////////*/
+
+#home_logo {
+    font-size: 1.5rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: rgb(97, 4, 97);
+    text-shadow: 2px 2px 1px #fbff0c, -2px -2px 1px #fbff0c, -2px 2px 1px #fbff0c, 2px -2px 1px #fbff0c;
+    text-align: center;
+    letter-spacing: 5px;
+    display: inline-block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+#home_logo > a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+#home_img {
+    vertical-align: middle;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+3. Nav
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#nav {
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+}
+
+.nav_item {
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav_item > a {
+    justify-content: space-around;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "M PLUS 1p";
+    font-weight: 900;
+    color: rgb(31, 30, 30);
+    padding: 10px 0;
+}
+
+.nav_item > a:hover {
+    background-color: rgb(253, 179, 228);
+    border-radius: 30px;
+    color: white;
+}
+
+.now {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: "M PLUS 1p";
+    font-weight: 900;
+    color: rgb(31, 30, 30);
+    padding: 10px 0;
+}
+
+
+ /*////////////////////////////////////////////////
+ Contents
+ //////////////////////////////////////////////*/
+
+#main_text {
+    font-size: 3rem;
+    font-family: 'Baloo Chettan', cursive;
+    color: #0c7dff;
+    text-shadow: 2px 2px 1px palevioletred, -2px -2px 1px palevioletred, -2px 2px 1px palevioletred, 2px -2px 1px palevioletred;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+#main_box {
+    width: 100%;
+    margin: 0;
+}
+
+
+.goods_title {
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 200px;
+    padding-left: 5px;
+    border-bottom: 10px dotted rgb(255, 128, 227);
+}
+
+.box_jump {
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+}
+
+#acs_title {
+    width: 250px;
+}
+
+#outer, #tops, #bottoms, #accessories {
+    width: 60%;
+    margin: 0 auto 50px;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item_list {
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.item_inner {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.item_text {
+    color: rgb(36, 35, 35);
+    letter-spacing: 1.5px;
+}
+
+.item_text::before {
+    font-family: 'Baloo Chettan', cursive;
+    content: "NEW";
+    color: red;
+    font-size: 0.8rem;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////
+
+14. Footer
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer {
+    min-width: 1200px;
+    background-color: rgb(95, 35, 95);
+}
+
+#footer_innner {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer_box {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+}
+
+.footer_title > a,
+#item_title {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    margin: 0;
+}
+
+#footer_list {
+    margin: 0 0 0 10px;
+    font-size: 0.5rem;
+}
+
+.footer_item {
+    color: white;
+}
+
+.footer_item > a {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#copy {
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+}
+
+/*///////////////////////////////////////////////
+BTN
+//////////////////////////////////////////////*/
+
+#btn_box {
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    width: 80px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+
+#btn_box > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    line-height: 55px;
+    text-align: center;
+}
+
+.gost {
+    font-size: 3rem;
+    color: blue;
+}
+
+.top_btn {
+    margin: 0;
+    width: 80px;
+    font-size: 1rem;
+    color: rgb(243, 249, 250);
+    line-height: 10px;
+}
+
+.gost:hover {
+    color: rgb(54, 236, 9);
+    font-size: 4rem;
+}
+
+.hover {
+    color: rgb(248, 29, 201);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
