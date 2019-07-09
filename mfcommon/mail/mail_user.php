@@ -17,6 +17,6 @@ MESSAGE：{$inquiry}
 -------------------------------------------------
 Mao Takeda
 URL：http://minjuuu.fem.jp/what-is-minju
+email: mao.jin.lily.3110@gmail.com
 -------------------------------------------------
 EOD;
-?>

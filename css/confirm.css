@@ -114,6 +114,25 @@ h2 {
     cursor : pointer;
 }
 
+.conf-box {
+    margin-bottom: 15%;
+}
+
+.r-btn {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20%;
+}
+
+.btn-inner {
+    border: none;
+    padding: 2%;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    border-radius: 5px;
+    cursor : pointer;
+}
+
 footer {
     width: 100%;
     text-align: center;

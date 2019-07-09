@@ -1,3 +1,15 @@
+<?php
+  header('Content-type: text/html; charset=utf-8');
+
+  const COMMON_FILE = 'mfcommon/';
+  require_once COMMON_FILE . 'function.php';
+  
+  // 送信情報の受け取り
+  $name = (string)filter_input(INPUT_POST, 'name');
+  $email = (string)filter_input(INPUT_POST, 'email');
+  $inquiry = (string)filter_input(INPUT_POST, 'inquiry');
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,22 +36,26 @@
  
 <!-- main -->
 <main class="main">
+  <p>※現在、日本語ページでのみ対応可能です。
+    <br>Please contact us by email using this form, Because I'm editing the page of English.  
+    <br>
+  </p>
   <form action="confirm.php" method="post">
     
     <div class="main_box">
          <div class="name_box">
             <label for="name" class="name">NAME：</label>
-            <input type="text" class="form_name" name="name">
+            <input type="text" class="form_name" name="name" maxlength="20" value="<?php echo h($name); ?>">
          </div>
 
          <div class="mail_box">
             <label for="mail">Email：</label>
-            <input type="text" class="form_mail" name="email">
+            <input type="text" class="form_mail" name="email" maxlength="50" value="<?php echo h($email); ?>">
          </div>
 
          <div class="msg_box">
             <label for="msg" class="msg">MESSAGE：</label>
-            <textarea class="msg02" name="inquiry"></textarea>
+            <textarea class="msg02" name="inquiry" rows="5" value="<?php echo h($inquiry); ?>"></textarea>
          </div>
     </div>
 
