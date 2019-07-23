@@ -6,6 +6,8 @@
  ///////////////////////////////////////////*/
 
   $(document).ready(function(){
+    $('#home').hide();
+
     setTimeout(function(){
       //処理
       $('#home').fadeIn(3000);

@@ -1,11 +1,12 @@
 <?php
   header('Content-type: text/html; charset=utf-8');
 
-  const COMMON_FILE = 'mfcommon/';
+  const COMMON_FILE = './mfcommon/';
   require_once COMMON_FILE . 'function.php';
   require_once COMMON_FILE . 'include/header.php';
   require_once COMMON_FILE . 'include/footer.php';
-  
+
+
   //送信情報の受け取り
   $name = (string)filter_input(INPUT_POST, 'name');
   $email = (string)filter_input(INPUT_POST, 'email');
@@ -14,15 +15,15 @@
   //入力必須項目の確認
   $message = '';
   if($name === ''){
-   $message .= '<li>【NAME】が入力されていません。</li>';
+   $message .= '<li>【NAME】が入力されていません。</li>'. PHP_EOL;
   }
   if($email === ''){
-   $message .= '<li>【Email】が入力されていません。</li>';
+   $message .= '<li>【Email】が入力されていません。</li>'. PHP_EOL;
   } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-   $message .= '<li>【Email】が正しく入力されていません。</li>';
+   $message .= '<li>【Email】が正しく入力されていません。</li>'. PHP_EOL;
   }
   if($inquiry === '') {
-      $message .= '<li>【MESSAGE】の入力をお願いします。</li>';
+      $message .= '<li>【MESSAGE】の入力をお願いします。</li>'. PHP_EOL;
   }
 
 
@@ -66,14 +67,14 @@ $confirm_html = '
 
           <div id="button-box">
               <form action="contact.php" method="post" id="btn-left">
-                  <input type="hidden" name="owner" value="' . h($name) . '">
+                  <input type="hidden" name="name" value="' . h($name) . '">
                   <input type="hidden" name="email" value="' . h($email) . '">
                   <input type="hidden" name="inquiry" value="' . h($inquiry) . '">
                   <input type="submit" value="Return" class="btn">
               </form>
 
               <form action="send.php" method="post">
-                  <input type="hidden" name="owner" value="' . h($name) . '">
+                  <input type="hidden" name="name" value="' . h($name) . '">
                   <input type="hidden" name="email" value="' . h($email) . '">
                   <input type="hidden" name="inquiry" value="' . h($inquiry) . '">
                   <input type="submit" value="Send" class="btn" id="send">
@@ -93,4 +94,3 @@ $confirm_html = '
     echo $footer_html;
   }
   exit;
-?>

@@ -1,3 +1,10 @@
+<?php
+require_once 'dbconnect.php';
+
+$posts = $db->prepare('SELECT * FROM post WHERE no=?');
+$posts->execute(array($_REQUEST['no']));
+$post = $posts->fetch();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,7 +12,8 @@
  <meta name="Content-Style-Type" content="text/css">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="css/blog.css">
+ <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+ <link rel="stylesheet" href="../css/blog.css">
  <title>BLOG-WHAT IS MINJU</title>
 </head>
 <body>
@@ -20,8 +28,14 @@
   </div>
 </header>
 
-<main>
-  <h2 id="text">今後公開予定です</h2>
+<main id="main">
+  <div id="innerBox">
+    <p id="inner-D"><?php echo $post['criate']; ?></p>
+    <p id="inner-T"><?php echo $post['title']; ?></P>
+    <pre id="inner-M"><?php echo $post['memo']; ?></pre>
+  </div>
+
+  <a href="blog.php" id="inner-Re"><i class="fas fa-angle-left inner-icon"></i>Back</a>
 </main>
 
 </body>

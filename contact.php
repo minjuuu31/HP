@@ -27,7 +27,7 @@
   <nav id="what_is_minju"><a href="index.html">WHAT IS MINJU</a></nav>
   <div class="header_nav">
    <div class="icon"><a href="prof.html">PROFILE</a></div>
-   <div class="icon"><a href="blog.html">BLOG</a></div>
+   <div class="icon"><a href="bgcommon/blog.php">BLOG</a></div>
    <div class="icon_now">CONTACT</div>
    <div class="icon"><a href="criate.html">CRIATE</a></div>
    <div class="icon"><a href="mov.html">MOVIE</a></div>
@@ -36,9 +36,9 @@
  
 <!-- main -->
 <main class="main">
-  <p>※現在、日本語ページでのみ対応可能です。
-    <br>Please contact us by email using this form, Because I'm editing the page of English.  
-    <br>
+  <p class="mailform-p">※現在、日本語ページでのみ対応可能です。
+    <br>※Please contact us by email using this form, Because preparation is not to be completed other page.
+    <br>※한국어 문의 페이지는 아직 준비가 안돼서 만약에 문의를 원하시는 분이 계시면 일본어페이지에서 보내주시기 바람니다.
   </p>
   <form action="confirm.php" method="post">
     
